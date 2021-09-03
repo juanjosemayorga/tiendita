@@ -1,0 +1,8 @@
+
+.header-container__logo-text {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: var(--color-orange);
+}

@@ -1,0 +1,13 @@
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  width: 89px;
+  height: 40px;
+  background-color: var(--color-malachite);
+  color: var(--color-white);
+  border-radius: 8px;
+}

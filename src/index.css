@@ -1,10 +1,38 @@
+:root {
+  --font-size-headline-1: 2.8rem;
+  --font-size-headline-2: 2rem;
+  --font-size-body-1-bold: 1.6rem;
+  --font-size-body-1-regular: 1.6rem;
+  --font-size-body-2-bold: 1.4rem;
+  --font-size-body-2-regular: 1.4rem;
+  --font-size-caption-semibold: 1.2rem;
+  --font-size-caption-regular: 1.2rem;
+  --font-size-button: 1.4rem;
+
+  --color-cobalt: #0252BC;
+  --color-scarlet: #FF1F18;
+  --color-boulder: #B8B4B4;
+  --color-black: #333333;
+  --color-cocoa-brown: #332927;
+  --color-silver: #BDBCBC;
+  --color-malachite: #0AC763;
+  --color-white: #FEFEFE;
+  --color-orange: #FC462D;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
