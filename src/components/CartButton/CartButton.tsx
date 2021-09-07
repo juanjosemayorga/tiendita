@@ -1,5 +1,5 @@
 import './CartButton.css'
-import ShoppingCart from '../../assets/Icons/ShoppingCart';
+import ShoppingCart from '../../assets/icons/ShoppingCart';
 
 export const CartButton = () => {
   return (
