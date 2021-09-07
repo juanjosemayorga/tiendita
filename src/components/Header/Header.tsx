@@ -1,17 +1,12 @@
-import { Cart } from '../Cart/Cart'
+import { CartButton } from '../CartButton/CartButton'
 import './Header.css'
 
 export const Header = () => {
   return (
-    <div className="container header-container">
-      <div className="row">
-        <div className="col-6">
-          <h3 className="header-container__logo-text">Tiendita</h3>
-        </div>
-        <div className="col-6">
-          <Cart />
-        </div>
-      </div>
-    </div>
+    <header className="header-container">
+      <h3 className="header-container__logo">Tiendita</h3>
+      <CartButton />
+      <p className="header-container__location">México City Marriot</p>
+    </header>
   )
 }
