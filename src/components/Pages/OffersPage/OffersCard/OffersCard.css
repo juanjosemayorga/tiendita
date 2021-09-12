@@ -1,0 +1,93 @@
+
+.offers-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+}
+
+.offers-card-container__disccount {
+  padding: 4px 0;
+}
+
+.offers-card-container__disccount-label {
+  background-color: var(--color-purple-bg);
+  border-radius: 16px;
+  color: var(--color-purple);
+  display: inline;
+  font-size: var(--font-size-caption-semibold);
+  font-weight: 600;
+  line-height: 16px;
+  padding: 4px;
+}
+
+.offers-card-container__figure-product {
+  height: 172px;
+  margin-top: 16px;
+  width: 172px;
+}
+
+.offers-card-container__figure-product-image {
+  height: 100%;
+  width: 100%;
+}
+
+.offers-card-container__prices-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.offers-card-container__prices-container--low-price {
+  color: var(--color-cocoa-brown);
+  font-size: var(--font-size-body-1-bold);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.offers-card-container__prices-container--normal-price {
+  color: var(--color-boulder);
+  font-size: var(--font-size-body-1-bold);
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: line-through;
+}
+
+.offers-card-container__description-text {
+  color: var(--color-cocoa-brown);
+  font-size: var(--font-size-body-2-regular);
+  font-weight: 400;
+  height: 48px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.offers-card-container__add-button {
+  background-color: var(--color-malachite);
+  border-radius: 8px;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--font-size-button);
+  font-weight: 400;
+  height: 40px;
+  line-height: 16px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  padding: 12px 24px;
+}
+
+@media (min-width: 768px) {
+  .offers-card-container {
+    width: 194px;
+  }
+  .offers-card-container__figure-product {
+    height: 194px;
+    width: 194px;
+  }
+  .offers-card-container__description-text {
+    height: 72px;
+  }
+  .offers-card-container__add-button {
+    margin-bottom: 16px;
+  }
+}
