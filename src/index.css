@@ -18,6 +18,10 @@
   --color-malachite: #0AC763;
   --color-white: #FEFEFE;
   --color-orange: #FC462D;
+  --color-background: #FAFAF8;
+
+  --margin-small-screen: 16px;
+  --margin-big-screen: 40px;
 }
 
 * {
@@ -33,6 +37,7 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--color-background);
 }
 
 code {
