@@ -7,11 +7,15 @@ export const OffersContainer = () => {
   return (
     <section className="slider">
       <div className="slider-container">
-        <div className="slider-slide">
           {
-            // products.map(product => <OffersCard {...product}/>)
+            products.map((product) => (
+              <div
+                className="slider-slide"
+                key={product.id}>
+                <OffersCard {...product} />
+              </div>
+            ))
           }
-        </div>
 
         {/* <div className="slider-slide">
           <OffersCard />

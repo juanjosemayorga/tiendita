@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
-import './OffersCard.css'
-import LIMON from '../../../../assets/images/Name=Limon.jpg'
 import { Product } from '../../../../data/interfaces';
+import { calculateDisccount } from '../../../../helpers/calculateDisccount';
+import './OffersCard.css'
 
 export const OffersCard = (product: Product) => {
 
-  const { disccount, image, name, price } = product;
+  const { disccount, image, name, price, unit } = product;
 
   return (
     <div className="offers-card-container">
@@ -21,10 +21,10 @@ export const OffersCard = (product: Product) => {
       </figure>
       <article className="offers-card-container__prices-container">
         <p className="offers-card-container__prices-container--low-price">
-          $26.82/kg
+          {calculateDisccount(disccount, price)}/{unit}
         </p>
         <p className="offers-card-container__prices-container--normal-price">
-          ${price}/kg
+          ${price}/{unit}
         </p>
       </article>
       <p className="offers-card-container__description-text">
@@ -36,5 +36,9 @@ export const OffersCard = (product: Product) => {
 };
 
 OffersCard.propTypes = {
-
+  disccount: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  unit: PropTypes.string.isRequired,
 }
