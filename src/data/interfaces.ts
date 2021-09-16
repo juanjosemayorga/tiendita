@@ -5,4 +5,5 @@ export interface Product {
   price: number;
   name: string;
   unit: string;
+  popular: boolean;
 }
