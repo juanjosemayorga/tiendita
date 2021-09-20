@@ -6,6 +6,10 @@
   white-space: nowrap;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .slider-slide {
   margin: 0;
   display: inline-block;

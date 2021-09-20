@@ -1,0 +1,13 @@
+
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-slide {
+  margin: 0;
+  display: inline-block;
+  margin-right: 24px;
+}

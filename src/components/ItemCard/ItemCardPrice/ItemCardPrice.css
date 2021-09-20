@@ -1,0 +1,23 @@
+
+.item-card-container__prices-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.item-card-container__prices-container--low-price {
+  color: var(--color-cocoa-brown);
+  font-size: var(--font-size-body-1-bold);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.item-card-container__prices-container--normal-price {
+  color: var(--color-boulder);
+  font-size: var(--font-size-body-1-bold);
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: line-through;
+  overflow: hidden;
+}

@@ -1,5 +1,5 @@
 .popular-page-container {
-  margin: 0 var(--margin-small-screen);
+  margin: 24px var(--margin-small-screen) 0;
 }
 
 .popular-page-container__subtitle {
