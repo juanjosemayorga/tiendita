@@ -10,8 +10,10 @@ export const ItemCard = (product: Product) => {
 
   return (
     <div className="item-card-container">
-      <div className="item-card-container__disccount">
-        <p className={`item-card-container__disccount-label ${hasDisccount}`}>
+      <div
+        className={`item-card-container__disccount ${!hasDisccount && 'without_disccount--container'}`}>
+        <p
+          className={`item-card-container__disccount-label ${!hasDisccount && 'without_disccount--text'}`}>
           {disccount}% dto.
         </p>
       </div>
@@ -28,9 +30,7 @@ export const ItemCard = (product: Product) => {
         price={price}
         unit={unit}
       />
-      <p className="item-card-container__description-text">
-        {name}
-      </p>
+      <p className="item-card-container__description-text">{name}</p>
       <button className="item-card-container__add-button">Agregar</button>
     </div>
   );

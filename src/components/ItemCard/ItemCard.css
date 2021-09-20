@@ -19,8 +19,12 @@
   padding: 4px;
 }
 
-.wituout-disccount {
-  /* display: none; */
+.without_disccount--container {
+  /* height: 25px; */
+}
+
+.without_disccount--text {
+  visibility: hidden;
 }
 
 .item-card-container__figure-product {
@@ -72,7 +76,8 @@
   }
 
   .item-card-container__description-text {
-    height: 72px;
+    min-height: 72px;
+    width: 194px;
   }
 
   .item-card-container__add-button {

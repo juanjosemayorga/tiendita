@@ -14,4 +14,7 @@
   .offers-page-container {
     margin: 0 var(--margin-big-screen);
   }
+  .offers-page-container__subtitle {
+    margin: 40px 0;
+  }
 }
